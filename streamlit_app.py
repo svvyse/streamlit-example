@@ -1,8 +1,8 @@
- import streamlit 
- import snowflake.connector 
- import pandas 
+import streamlit 
+import snowflake.connector 
+import pandas 
   
- streamlit.title('Papeleria') 
+streamlit.title('Papeleria') 
  # connect to snowflake 
  #my_cnx = snowflake.connector.connect(**streamlit.secrets["snowflake"]) 
  #my_cur = my_cnx.cursor() 
