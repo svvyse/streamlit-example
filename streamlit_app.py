@@ -18,7 +18,7 @@ chart_data = pd.DataFrame( np.random.randn(20, 3), columns=['a', 'b', 'c'])
 st.line_chart(chart_data)
 
 
-map_data = pd.DataFrame( np.random.randn(1000, 2) / [50, 50] + [37.76, -122.4], columns=['lat', 'lon']) 
+map_data = pd.DataFrame( np.random.randn(1000, 2) / [50, 50] + [19.24, -99.98], columns=['lat', 'lon']) 
 st.map(map_data)
 
  # connect to snowflake 
