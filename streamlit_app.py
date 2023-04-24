@@ -1,6 +1,6 @@
-import streamlit 
+import streamlit as st
 #import snowflake.connector 
-import pandas 
+import pandas as pd
   
 streamlit.title('Papeleria') 
 
