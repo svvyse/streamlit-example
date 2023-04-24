@@ -14,6 +14,7 @@ dataframe = pd.DataFrame(
     columns=('col %d' % i for i in range(20)))
 
 st.dataframe(dataframe.style.highlight_max(axis=0))
+st.table(dataframe)
 
  # connect to snowflake 
  #my_cnx = snowflake.connector.connect(**streamlit.secrets["snowflake"]) 
