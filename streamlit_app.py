@@ -31,11 +31,10 @@ st.text_input("Your name", key="name")
 
 
 if st.checkbox('Show dataframe'): 
- vchart_data = pd.DataFrame( 
+  vchart_data = pd.DataFrame( 
     np.random.randn(20, 3), 
     columns=['a', 'b', 'c']) 
-
-chart_data
+  chart_data
 
  # connect to snowflake 
  #my_cnx = snowflake.connector.connect(**streamlit.secrets["snowflake"]) 
