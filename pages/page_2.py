@@ -1,5 +1,9 @@
 import streamlit as st
+import pandas as pd
 
+# Page setup 
+st.set_page_config(page_title="Papeleria Search Engine", page_icon="🐍", layout="wide") 
+st.title("Papeleria Search Engine") 
 st.markdown("# Page 2 ❄️")
 st.sidebar.markdown("# Page 2 ❄️")
 
@@ -8,12 +12,12 @@ from google.oauth2 import service_account
 from gsheetsdb import connect
 
 # Create a connection object.
-credentials = service_account.Credentials.from_service_account_info(
-    st.secrets["gcp_service_account"],
-    scopes=[
-        "https://www.googleapis.com/auth/spreadsheets",
-    ],
-)
+#credentials = service_account.Credentials.from_service_account_info(
+#    st.secrets["gcp_service_account"],
+#    scopes=[
+#        "https://www.googleapis.com/auth/spreadsheets",
+#    ],
+#)
 #conn = connect(credentials=credentials)
 
 # Perform SQL query on the Google Sheet.
@@ -32,9 +36,7 @@ credentials = service_account.Credentials.from_service_account_info(
 #for row in rows:
 #    st.write(f"{row.product_type_id} has a {row.product_type}")
 
-# Page setup 
-st.set_page_config(page_title="Papeleria Search Engine", page_icon="🐍", layout="wide") 
-st.title("Papeleria Search Engine") 
+
 # Connect to the Google Sheet 
 sheet_id = "1m-kuvMvXRNu_M0b00dmc18-fRoxpbqmtAuhKIWV9054" 
 sheet_name = "ProductType" 
