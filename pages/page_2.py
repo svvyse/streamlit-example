@@ -30,4 +30,4 @@ rows = run_query(f'SELECT * FROM "{sheet_url}"')
 
 # Print results.
 for row in rows:
-    st.write(f"{row.product_type_id} #has a :{row.product_type}:")
+    st.write(f"{row.product_type_id} has a :{row.product_type}:")
