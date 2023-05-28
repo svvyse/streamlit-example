@@ -40,7 +40,7 @@ from gsheetsdb import connect
 # Connect to the Google Sheet 
 sheet_id = "1m-kuvMvXRNu_M0b00dmc18-fRoxpbqmtAuhKIWV9054" 
 sheet_name = "ProductType" 
-url = f"<https://docs.google.com/spreadsheets/d/{sheet_id}/gviz/tq?tqx=out:csv&sheet={sheet_name}>" 
+url = f"https://docs.google.com/spreadsheets/d/{sheet_id}/gviz/tq?tqx=out:csv&sheet={sheet_name}" 
 df = pd.read_csv(url, dtype=str).fillna("") 
 # Show the dataframe (we'll delete this later) 
 st.write(df)
