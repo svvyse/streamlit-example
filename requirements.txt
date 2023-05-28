@@ -1,4 +1,4 @@
 altair
 pandas
 streamlit
-gsheetsdb==1.13.1
+gsheetsdb==0.1.13.1
