@@ -5,7 +5,7 @@ st.sidebar.markdown("# Page 2 ❄️")
 
 
 from google.oauth2 import service_account
-#from gsheetsdb import connect
+from gsheetsdb import connect
 
 # Create a connection object.
 #credentials = service_account.Credentials.from_service_account_info(
